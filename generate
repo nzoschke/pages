@@ -35,7 +35,7 @@ end
 
 html["index.html"] = ""
 index.sort { |a,b| b[1] <=>a [1] }.each do |p,t|
-  html["index.html"] += "<h2><span>#{t[0]}</span><a href=\"#{p}\">#{t[1]}</a></h2>\n"
+  html["index.html"] += "<h3 class=\"index\"><span>#{t[0]}</span><a href=\"#{p}\">#{t[1]}</a></h3>\n"
 end
 
 html.each do |p, body|
