@@ -15,7 +15,7 @@ $ git remote add pages https://github.com/nzoschke/pages.git
 $ git fetch pages
 
 $ git show pages/gh-pages:generate | ruby
-* Creating gh-pages branch from pages/master
+* Creating gh-pages branch from pages/gh-pages
 * Generating HTML
 * Committing HTML to gh-pages branch
     Switched to branch 'gh-pages'
