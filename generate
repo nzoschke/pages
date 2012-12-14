@@ -26,7 +26,7 @@ index = {}
 
 Dir["*.md"].each do |md|
   p = File.basename(md, File.extname(md)) + ".html"
-  html[p] = `curl --data-urlencode text@#{md} -s -X POST https://gist.github.com/preview`
+  html[p] = `curl --data-binary @#{md} -H "Content-Type:text/plain" -s https://api.github.com/markdown/raw`
 
   if m = md.match(/([0-9-]{10})-([^.]+)/)
     index[p] = [m[1], m[2].split("-").map(&:capitalize).join(" ")]
