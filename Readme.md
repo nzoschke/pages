@@ -43,6 +43,5 @@ select from the themes that GitHub provides.
 
 ## Todo
 
-* Improve index table of contents layout
 * Improve index.html -> ERB logic, it's completely broken on some themes.
-* Inject GitHub's Markdown stylesheet
+* Improve link to root; needs different logic depending on Heroku or GitHub project page
